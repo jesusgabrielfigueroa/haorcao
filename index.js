@@ -47,8 +47,8 @@ more.onclick = function(){
 add.onclick = function(){
 	if(moreTema.value != "" && moreWord.value != ""){
 		let obj = {
-			teme: moreTema.value,
-			word: moreWord.value
+			teme: moreTema.value.toLowerCase(),
+			word: moreWord.value.toLowerCase()
 		}
 		form.classList.toggle("hidden");
 		words.push(obj);
